@@ -70,7 +70,7 @@ Create *at least three* graphics that each visually explain an aspect of your da
 > 
 > - BST Add versus Remove, and Search for BST
 > 
-> **:white_check_mark: different data structures *but* same operation***
+> **:white_check_mark: different data structures *but* same operation**
 > 
 > - BST Add versus Add for Sorted Vector, and Sorted Single/Double Linked List
 > 
