@@ -60,27 +60,25 @@ Create *at least three* graphics that each visually explain an aspect of your da
 
 > [!IMPORTANT]
 > 
-> Make sure you are comparing apples to apples. 
+> Make sure you are comparing apples to apples and not apples to oranges when choosing what to put in the same graph. 
 > 
-> **:x: different data structures and different operations**
+> **:x: different data structures *and* different operations**
 > 
 > - Vector Add Front versus BST Add
 > 
-> **:heavy_check_mark: *same data structure* and different operations**
+> **:white_check_mark: different operations *but* same data structure**
 > 
-> - *BST* Add versus Remove, Search for *BST*
+> - BST Add versus Remove, and Search for BST
 > 
-> **:heavy_check_mark: different data structures and *same operation***
+> **:white_check_mark: different data structures *but* same operation***
 > 
-> - BST *Add* versus *Add* for Sorted Vector, Sorted Single/Double Linked List
+> - BST Add versus Add for Sorted Vector, and Sorted Single/Double Linked List
 > 
-> - Vector *Add Front* versus *Add Front* for Single/Double Linked List
-
-
+> - Vector Add Front versus Add Front for Single/Double Linked List
 
 > [!TIP]
 > 
-> To create the graphics you can use a third party program like Microsoft Excel or Google Sheets. (Completely optional if you want extra coding; you can use python libraries such as matplotlib, seaborn, or plotly)
+> To create the graphics you can use a third party program like Microsoft Excel or Google Sheets. (Completely optional if you want extra coding: you can use python libraries such as matplotlib, seaborn, or plotly)
 > 
 > Make sure you can see the image embedded in the Report.md using [image markdown] when you upload it to github, and get help if it doesn't show! 
 
