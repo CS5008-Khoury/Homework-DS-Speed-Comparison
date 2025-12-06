@@ -26,6 +26,8 @@ Don't forget to use latex math notation (example in the table).
 
 For Sort, we are asking for the Big $O$ for taking the current data structure and writing it 'sorted' to a file. However, not the file writes. For example, if you have a vector of 1000 elements, and you want to write it to a file, you would need to sort it first. So, the Big $O$ for this would be the Big $O$ for sorting. For BST, you have to convert the tree to a sequential structure, so the cost of doing that.  
 
+If you are using amortized timings, make sure you state that in the wording. For example, "$O(n)$, amortized".
+
 ### Assumptions with Sort
 
 Since the worst case can change considerably based on what sort you use for sorting (if any), list each algorithm below, and specify the algorithm used in your assumption.  For BST, write which  method of traversal you would use to sort it.  
@@ -123,9 +125,8 @@ For example:
 
 8. What data structure is the fastest for removing elements from the back? Why do you think that is?
 
-### Deeper Thinking
 
-#### Double Linked List vs Single Linked List
+### Double Linked List vs Single Linked List
 
 1. If you wrote your linked list as a single linked list, removing from the back was expensive. If you wrote it as a double linked list, removing from the back was cheap. Why do you think that is?
 
@@ -135,7 +136,7 @@ For example:
 
 4. How did this particularly influence the linked list searches?
 
-#### Test Bias
+### Test Bias
 
 1. The tests were inherently biased towards the BST to perform better due the setup of the experiment. Explain why this is the case.  (hint: think about the randomization of the data, and the worst case scenario for BST).
 
@@ -173,6 +174,7 @@ Add your references here. A good reference includes an inline citation, such as 
 
 [1] Reference info, date, etc.
 
+## Footnotes
 [^1^]: Implementing a BST with a self-balancing algorithm, such as AVL or Red-Black Trees is a great research paper topic!
 
 <!-- links moved to bottom for easier reading in plain text (btw, this a comment that doesn't show in the webpage generated-->
