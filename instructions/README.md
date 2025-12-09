@@ -13,6 +13,21 @@ take a breath and remind yourself you are only writing code for a small part of 
     - [Stretch Goal](#stretch-goal)
   - [Part 2 (Week 2): Binary Search Tree](#part-2-week-2-binary-search-tree)
   - [Part 3 (Week 2): Speed Comparison and Report](#part-3-week-2-speed-comparison-and-report)
+  - [🤖 Use of LLMs](#-use-of-llms)
+    - [Recommended Approach](#recommended-approach)
+    - [Example Prompts](#example-prompts)
+      - [Understanding Concepts](#understanding-concepts)
+      - [Debugging Guidance](#debugging-guidance)
+      - [Code Review](#code-review)
+      - [Understanding Test Failures](#understanding-test-failures)
+      - [Memory Management](#memory-management)
+    - [Red Flags - You're Using AI Wrong](#red-flags---youre-using-ai-wrong)
+    - [For Your Report](#for-your-report)
+    - [Self-Assessment Checklist](#self-assessment-checklist)
+      - [Code Understanding](#code-understanding)
+      - [Testing](#testing)
+      - [Experimental Report](#experimental-report)
+      - [Memory Management](#memory-management-1)
   - [📝 Grading Rubric](#-grading-rubric)
     - [Submission Reminder 🚨](#submission-reminder-)
   - [📚 Resources](#-resources)
@@ -78,8 +93,156 @@ After you have completed the code for the data structures, you will need to run 
 
 After getting the data, you will want to work on your [Report](../Report.md). All questions are in the report, need to be answered. The TAs will be grading by looking at your report through a browser, so make sure when it is uploaded to github it looks good (and is formatted correctly).
 
+## 🤖 Use of LLMs
+
+For this assignment, you will want to write most of the code for the source, but can use code completion for the tests. Since the tests use a specific test suite we provide, prompting can work against you. Taking it in small chunks will be beneficial. 
+
+You SHOULD NOT use LLMs for your report! It is important to reason through the answers, completely understand what they are, and also for the experiment side, LLMs will often lead you towards wrong answers! This is an experiment you are running, make sure your report reflects your understanding of that experiment.
 
 
+### Recommended Approach
+
+**Write implementations yourself, use AI for:**
+- Understanding concepts before coding
+- Debugging assistance (not fixes)
+- Test case ideas
+- Code review (logic, not rewrites)
+
+**Don't use AI for:**
+- Writing complete functions
+- Fixing code without understanding why
+- Your experimental report and analysis
+
+
+### Example Prompts
+
+#### Understanding Concepts
+
+```
+Explain how pointer manipulation works for linked list insertion at:
+- The head
+- The middle  
+- The tail
+
+Use step-by-step descriptions, but don't write the code for me.
+```
+
+#### Debugging Guidance
+
+```
+I'm getting a segmentation fault in my linked list insert function when 
+inserting into an empty list.
+
+Here's my code:
+[paste code]
+
+Don't fix it. Instead:
+1. What could cause this specific error?
+2. What should I check first?
+3. Ask me questions to help me find it myself
+```
+
+#### Code Review
+
+```
+I've implemented BST insert recursively. Before I test it, can you:
+1. Identify any logical errors (don't fix them, just point them out)
+2. Ask me about edge cases I should test
+3. Explain what could go wrong with my approach
+
+Here's my code:
+[paste code]
+```
+
+#### Understanding Test Failures
+
+```
+My test "test_sorted_vector_maintains_order" is failing.
+
+Here's the test:
+[paste test]
+
+Here's my implementation:
+[paste implementation]
+
+Help me trace through what the test expects vs. what my code does. 
+Guide me to find where they diverge - don't fix my code.
+```
+
+#### Memory Management
+
+```
+Explain the memory management pattern for BST deletion:
+- What gets allocated and when?
+- What gets freed and when?
+- What are common mistakes?
+
+Use examples to illustrate, but don't write the actual function.
+```
+
+---
+
+### Red Flags - You're Using AI Wrong
+
+❌ Asking "Write a complete LinkedList implementation"  
+❌ Copying code you can't explain line-by-line  
+❌ Using AI to analyze YOUR experimental data  
+❌ Letting AI write your report answers  
+
+✅ Using AI to understand concepts before implementing  
+✅ Getting guidance on debugging, not fixes  
+✅ Asking for explanation of approaches, not code  
+✅ Writing all report analysis yourself from YOUR data  
+
+---
+
+### For Your Report
+
+**Your experimental report must be your own work.** You're analyzing data from YOUR implementations with YOUR observations. LLMs give generic textbook answers that won't match your specific results.
+
+If you need help understanding a concept for the report, ask questions that guide your thinking, not questions that give you answers:
+
+```
+I observed that sorted vector insertion is slower than expected for small arrays.
+
+Don't explain it - instead:
+1. Give me a list of factors I should investigate
+2. Ask me questions about my implementation
+3. Suggest experiments to isolate the cause
+```
+
+**Bottom line:** If you can't explain every line of code you wrote and every conclusion in your report, you've used AI incorrectly.
+
+---
+
+### Self-Assessment Checklist
+
+Before submitting, verify:
+
+#### Code Understanding
+- [ ] I can explain every function I wrote, and provided functions
+- [ ] I can trace through execution with sample inputs
+- [ ] I understand the time/space complexity of each operation
+- [ ] I can explain my design decisions
+
+#### Testing
+- [ ] All provided tests pass
+- [ ] I've added my own edge case tests
+- [ ] I can debug failures systematically
+- [ ] I understand what each test validates
+
+#### Experimental Report  
+- [ ] I ran experiments on MY implementations
+- [ ] I analyzed MY data, not theoretical expectations
+- [ ] I explained discrepancies from MY observations
+- [ ] I can defend every statement I made
+
+#### Memory Management
+- [ ] I understand every malloc/free in my code
+- [ ] Valgrind shows no memory leaks
+- [ ] I can explain the lifetime of each allocation
+
+If you can't check all these boxes, you've relied too heavily on AI and need to go back and truly understand your work.
 
 
 ## 📝 Grading Rubric
